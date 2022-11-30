@@ -1,8 +1,9 @@
 import Echo from 'laravel-echo'
 import Pusher from 'pusher-js'
 
-const host = '192.168.101.79'
+// const host = '192.168.101.79'
 // const host = '192.168.150.103'
+const host = 'xenter.my.id'
 
 window.Pusher = Pusher
 
@@ -12,8 +13,8 @@ window.Echo = new Echo({
   cluster: 'mt1',
   wsHost: host,
   encrypted: false,
-  wssPort: 6001,
-  wsPort: 6001,
+  wssPort: 6002,
+  wsPort: 6002,
   disableStats: true,
   forceTLS: false, // default true
   enabledTransports: ['ws', 'wss']

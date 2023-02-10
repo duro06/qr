@@ -46,7 +46,7 @@ export const useQrCodeStore = defineStore('qr_code_store', {
         api.post('v1/qrcode/store', data)
           .then(resp => {
             this.loading = false
-            console.log('qr resp', resp)
+            // console.log('qr resp', resp)
             this.newQr = resp.data.code
             resolve(resp)
           })

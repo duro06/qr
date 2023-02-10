@@ -1,3 +1,4 @@
+<!-- eslint-disable no-unused-vars -->
 <template>
   <q-page class="bg-white">
     <div class="full-width row justify-between items-center content-between">
@@ -10,7 +11,7 @@
             <div class="row q-col-gutter-sm q-mb-lg items-center">
               <div class="col-6 text-right">
                 <q-img
-                  :src="`src/assets/logos/logo-rsud.png`"
+                  src="~assets/logos/logo-rsud.png"
                   height="70px"
                   ratio="1"
                   fit="contain"
@@ -18,7 +19,7 @@
               </div>
               <div class="col-6 text-left">
                 <div class="row f-14 text-weight-bold">
-                  UOBK RUSD Dr. MUHAMMAD SALEH
+                  UOBK RSUD Dokter MOHAMAD SALEH
                 </div>
                 <div class="row f-12 text-weight-bold">
                   KOTA PROBOLINGGO

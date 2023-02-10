@@ -198,13 +198,13 @@ const generate = () => {
   } else {
     notifErrVue('No qr to generate')
   }
-  console.log('gnerate qr', user.value)
+  // console.log('gnerate qr', user.value)
 }
 
 qrcodeChannel.subscribed(() => {
   console.log('Chanel QRCODE Page Qr')
 }).listen('.qr-baru', e => {
-  console.log('string qr pageQr', e.message)
+  // console.log('string qr pageQr', e.message)
   const uid = localStorage.getItem('uid')
   if (e.message.data) {
     if (uid === e.message.data.ip) {

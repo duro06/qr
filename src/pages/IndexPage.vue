@@ -169,7 +169,7 @@ const user = ref(null)
 const jadwal = ref(null)
 const absen = ref(null)
 const path = computed(() => {
-  const pla = user.value ? 'https://rsudmsaleh.probolinggokota.go.id/simpeg/foto/' + user.value.nip + '/' + user.value.foto : 'images/matsaleh.jpg'
+  const pla = user.value ? 'http://192.168.100.100/simpeg/foto/' + user.value.nip + '/' + user.value.foto : 'images/matsaleh.jpg'
   return pla
 })
 store.getQrCode().then(data => {
